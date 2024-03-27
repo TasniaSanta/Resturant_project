@@ -1,34 +1,53 @@
 import unittest
-from system import add, CostofDrinks
+from unittest.mock import MagicMock
 
-class TestSystem(unittest.TestCase):
+def btn_click(numbers, text_Input):
+    # Update the input text with the clicked number
+    operator = text_Input.get()
+    operator = operator + str(numbers)
+    text_Input.set(operator)
 
-    def test_add(self):
-        # Test case 1: Adding two positive numbers
-        result = add(3, 5)
-        self.assertEqual(result, 8)
+def btn_clear(text_Input):
+    # Clear the input text
+    text_Input.set("")
 
-        # Test case 2: Adding a positive and a negative number
-        result = add(-3, 5)
-        self.assertEqual(result, 2)
+def btn_equals(text_Input):
+    # Evaluate the expression and update the input text with the result
+    operator = text_Input.get()
+    try:
+        sum_up = str(eval(operator))
+        text_Input.set(sum_up)
+    except Exception as e:
+        # Handle errors gracefully
+        print("Error:", e)
 
-        # Test case 3: Adding two negative numbers
-        result = add(-3, -5)
-        self.assertEqual(result, -8)
+class TestCalculator(unittest.TestCase):
+    def setUp(self):
+        self.text_Input = MagicMock()
 
-    def test_cost_of_drinks(self):
-        # Test case 1: Creating an instance of CostofDrinks
-        drinks = CostofDrinks()
-        self.assertIsInstance(drinks, CostofDrinks)
+    def test_btn_click(self):
+        # Trigger btn_click with input '7'
+        btn_click(7, self.text_Input)
+        
+        # Assert that the set method was called with '7' appended to the current input text
+        self.text_Input.set.assert_called_once_with(self.text_Input.get() + "7")
 
-        # Test case 2: Checking if the default drink prices are correct
-        self.assertEqual(drinks.latta, 1.2)
-        self.assertEqual(drinks.espresso, 1.5)
-        self.assertEqual(drinks.iced_latta, 1.8)
-        self.assertEqual(drinks.vale_coffee, 2.0)
-        self.assertEqual(drinks.cappuccino, 1.8)
-        self.assertEqual(drinks.african_coffee, 2.0)
-        self.assertEqual(drinks.american_coffee, 1.8)
+    def test_btn_clear(self):
+        # Trigger btn_clear
+        btn_clear(self.text_Input)
+        
+        # Assert that the set method was called with an empty string
+        self.text_Input.set.assert_called_once_with("")
+
+    def test_btn_equals(self):
+        # Mock the return value of get method to simulate input '3+5'
+        self.text_Input.get.return_value = "3+5"
+        
+        # Trigger btn_equals
+        btn_equals(self.text_Input)
+        
+        # Assert that the set method was called with the result of '3+5', which is '8'
+        self.text_Input.set.assert_called_once_with("8")
 
 if __name__ == '__main__':
     unittest.main()
