@@ -104,11 +104,17 @@ E_Queen_Park_Cake.set("0")
 
 Dateoforder.set(time.strftime("%d/%m/%Y"))
 # Define a function to exit the application
-def iExit():
-    iExit=tkinter.messagebox.askyesno("Exit Resturant System","Confirm if u want to exit")
-    if iExit>0:
+# def iExit():
+#     iExit=tkinter.messagebox.askyesno("Exit Resturant System","Confirm if u want to exit")
+#     if iExit>0:
+#         root.destroy()
+#         return
+    
+
+def exit_application():
+    exit_confirmation = tkinter.messagebox.askyesno("Exit Restaurant System", "Confirm if you want to exit")
+    if exit_confirmation:
         root.destroy()
-        return
 # Define a function to reset all the fields
 def Reset():
     # Reset all variables and entry fields
@@ -382,21 +388,21 @@ def Receipt():
 
 #------------------------------------------------Drinks------------------#
 Latta=Checkbutton(Drinks_F,text="Latta",variable=var1,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="powder Blue",command=chkLatta).grid(row=0,sticky=W)
+                  bg="#B0E0E6",command=chkLatta).grid(row=0,sticky=W)
 Espresso=Checkbutton(Drinks_F,text="Espresso",variable=var2,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="powder Blue",command=chkEspresso).grid(row=1,sticky=W)
+                  bg="#B0E0E6",command=chkEspresso).grid(row=1,sticky=W)
 Iced_Latta=Checkbutton(Drinks_F,text="Iced_Latta",variable=var3,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="powder Blue",command=chkIced_Latta).grid(row=2,sticky=W)
+                  bg="#B0E0E6",command=chkIced_Latta).grid(row=2,sticky=W)
 Vale_Coffee=Checkbutton(Drinks_F,text="Vale Coffee",variable=var4,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="powder Blue",command=chkVale_coffee).grid(row=3,sticky=W)
+                  bg="#B0E0E6",command=chkVale_coffee).grid(row=3,sticky=W)
 Cappuccino=Checkbutton(Drinks_F,text="Cappuccino",variable=var5,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="powder Blue",command=chkCappucino).grid(row=4,sticky=W)
+                  bg="#B0E0E6",command=chkCappucino).grid(row=4,sticky=W)
 African_Coffee=Checkbutton(Drinks_F,text="African Coffee",variable=var6,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="powder Blue",command=chkAfrican_coffee).grid(row=5,sticky=W)
+                  bg="#B0E0E6",command=chkAfrican_coffee).grid(row=5,sticky=W)
 American_Coffee=Checkbutton(Drinks_F,text="American Coffee",variable=var7,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="powder Blue",command=chkAmerican_coffee).grid(row=6,sticky=W)
+                  bg="#B0E0E6",command=chkAmerican_coffee).grid(row=6,sticky=W)
 Iced_Cappuccino=Checkbutton(Drinks_F,text="Iced Cappuccino",variable=var8,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="powder Blue",command=chkIced_Cappucino).grid(row=7,sticky=W)
+                  bg="#B0E0E6",command=chkIced_Cappucino).grid(row=7,sticky=W)
 #------------------------------------------------Entry box for drinks------------------#
 txtLatta=Entry(Drinks_F,font=("arial",16,"bold"),textvariable=E_Latta,bd=8,width=6,justify=LEFT,state=DISABLED)
 txtLatta.grid(row=0,column=1)
@@ -424,21 +430,21 @@ txtIced_Cappuccino.grid(row=7,column=1)
 
 #-------------------------------cakes--------------------------------------------------#
 SchoolCake=Checkbutton(Cake_F,text="School Cake",variable=var9,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="powder Blue",command=chkSchool_cake).grid(row=0,sticky=W)
+                  bg="#B0E0E6",command=chkSchool_cake).grid(row=0,sticky=W)
 Sunny_AO_Cake=Checkbutton(Cake_F,text="Sunny O Cake",variable=var10,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="powder Blue",command=chkSunny_AO_Cake).grid(row=1,sticky=W)
+                  bg="#B0E0E6",command=chkSunny_AO_Cake).grid(row=1,sticky=W)
 Jonathan_YO_Cake=Checkbutton(Cake_F,text="Jonathan O Cake",variable=var11,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="powder Blue",command=chkJonathan_YO_Cake).grid(row=2,sticky=W)
+                  bg="#B0E0E6",command=chkJonathan_YO_Cake).grid(row=2,sticky=W)
 West_African_Cake=Checkbutton(Cake_F,text="West African Cake",variable=var12,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="powder Blue",command=chkWest_Africa_Cake).grid(row=3,sticky=W)
+                  bg="#B0E0E6",command=chkWest_Africa_Cake).grid(row=3,sticky=W)
 Lagos_Choclate_Cake=Checkbutton(Cake_F,text="Lagos Choclate Cake",variable=var13,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="powder Blue",command=chkLagos_choclte_Cake).grid(row=4,sticky=W)
+                  bg="#B0E0E6",command=chkLagos_choclte_Cake).grid(row=4,sticky=W)
 Kilburn_Choclate_Cake=Checkbutton(Cake_F,text="Kilburn Choclate Cake",variable=var14,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="powder Blue",command=chkKilburn_chocolate_Cake).grid(row=5,sticky=W)
+                  bg="#B0E0E6",command=chkKilburn_chocolate_Cake).grid(row=5,sticky=W)
 Carlton_Hill_Cake=Checkbutton(Cake_F,text="Carlton Hill Cake",variable=var15,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="powder Blue",command=chkCarlton_Hill_Cake).grid(row=6,sticky=W)
+                  bg="#B0E0E6",command=chkCarlton_Hill_Cake).grid(row=6,sticky=W)
 Queen_Park_Cake=Checkbutton(Cake_F,text="Queen Park Cake",variable=var16,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="powder Blue",command=chkQueen_park_Cake).grid(row=7,sticky=W)
+                  bg="#B0E0E6",command=chkQueen_park_Cake).grid(row=7,sticky=W)
 
 #------------------------------------------------Entry box for Cakes------------------#
 txtSchoolCake=Entry(Cake_F,font=("arial",16,"bold"),bd=8,width=6,justify=LEFT,
@@ -522,7 +528,7 @@ btnReset=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"
 btnReset.grid(row=0, column=2)
 
 btnExit=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Exit",
-                bg="#B0E0E6",command=iExit ).grid(row=0,column=3)
+                bg="#B0E0E6",command=exit_application ).grid(row=0,column=3)
 #-------------------------------Calculator Display-----------------------------
 def btnClick(numbers):
     global operator
