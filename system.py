@@ -351,7 +351,7 @@ def generate_receipt_reference():
     #Generate a cryptographically secure random reference number for the receipt
     return "BILL" + str(secrets.randbelow(609235 - 10903) + 10903)
 
-def Receipt():
+def receipt():
     #Generate and display a receipt with a random reference number.
     txtReceipt.delete("1.0", END)
     random_ref = generate_receipt_reference()
@@ -515,7 +515,7 @@ txtReceipt.grid(row=0,column=0)
 btnTotal=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Total",
                 bg="#B0E0E6",command=calculate_costs).grid(row=0,column=0)
 btnReceipt=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Receipt",
-                bg="#B0E0E6",command=Receipt).grid(row=0,column=1)
+                bg="#B0E0E6",command=receipt).grid(row=0,column=1)
 btnReset=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Reset",
                 bg="#B0E0E6",command=reset_values)#.grid(row=0,column=2)
 btnReset.grid(row=0, column=2)
