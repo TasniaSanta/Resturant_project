@@ -1,9 +1,10 @@
-from tkinter import *
+#from tkinter import *
+from tkinter import Tk, Frame, Label, Entry, Checkbutton, Button, Text, StringVar, IntVar, END, DISABLED, NORMAL,RIDGE,CENTER,TOP,BOTTOM,RIGHT,LEFT,W
 import random
 import time;
 import datetime
 import tkinter.messagebox
-
+# Initialize Tkinter
 root=Tk()
 root.geometry("1550x750+0+0")
 root.title("Resturant Management Systems")
@@ -102,13 +103,15 @@ E_Carlton_Hill_Cake.set("0")
 E_Queen_Park_Cake.set("0")
 
 Dateoforder.set(time.strftime("%d/%m/%Y"))
-#-----------------------------exit confirmation-------------------------
+# Define a function to exit the application
 def iExit():
     iExit=tkinter.messagebox.askyesno("Exit Resturant System","Confirm if u want to exit")
     if iExit>0:
         root.destroy()
         return
+# Define a function to reset all the fields
 def Reset():
+    # Reset all variables and entry fields
     PaidTax.set("")
     SubTotal.set("")
     TotalCost.set("")
@@ -116,8 +119,8 @@ def Reset():
     CostofDrinks.set("")
     ServiceCharge.set("")
     txtReceipt.delete("1.0",END)
-
-
+    
+    # Reset other variables here...
     E_Latta.set("0")
     E_Espresso.set("0")
     E_Iced_Latta.set("0")
@@ -169,7 +172,9 @@ def Reset():
     txtCarlton_Hill_Cake.configure(state=DISABLED)
     txtQueen_Park_Cake.configure(state=DISABLED)
 
+# Define a function to calculate the cost of items
 def CostofItem():
+    # Calculate cost of drinks and cakes here...
     Item1=float(E_Latta.get())
     Item2=float(E_Espresso.get())
     Item3=float(E_Iced_Latta.get())
@@ -574,4 +579,5 @@ btnEquals=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),w
                 bg="powder blue",command=btnEquals).grid(row=5,column=2)
 btnDiv=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="/",
                 bg="powder blue",command=lambda:btnClick("/")).grid(row=5,column=3)
+# Run the Tkinter event loop
 root.mainloop()
