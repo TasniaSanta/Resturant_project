@@ -8,33 +8,33 @@ import tkinter.messagebox
 root=Tk()
 root.geometry("1550x750+0+0")
 root.title("Resturant Management Systems")
-root.configure(background="Cadet Blue")
+root.configure(background="#5F9EA0")
 
-Tops=Frame(root,bg="Cadet Blue",bd=20,pady=5,relief=RIDGE)
+Tops=Frame(root,bg="#5F9EA0",bd=20,pady=5,relief=RIDGE)
 Tops.pack(side=TOP)
-lblTitle=Label(Tops,font=("arial",50,"bold"),text="Resturant Management Systems",bd=21,bg="Cadet Blue",
+lblTitle=Label(Tops,font=("arial",50,"bold"),text="Resturant Management Systems",bd=21,bg="#5F9EA0",
                fg="Cornsilk",justify=CENTER)
 lblTitle.grid(row=0,column=0)
 
-ReceiptCal_F=Frame(root,bg="Powder Blue",bd=10,relief=RIDGE)
+ReceiptCal_F=Frame(root,bg="#B0E0E6",bd=10,relief=RIDGE)
 ReceiptCal_F.pack(side=RIGHT)
-Buttons_F=Frame(ReceiptCal_F,bg="Powder Blue",bd=3,relief=RIDGE)
+Buttons_F=Frame(ReceiptCal_F,bg="#B0E0E6",bd=3,relief=RIDGE)
 Buttons_F.pack(side=BOTTOM)
-Cal_F=Frame(ReceiptCal_F,bg="Powder Blue",bd=6,relief=RIDGE)
+Cal_F=Frame(ReceiptCal_F,bg="#B0E0E6",bd=6,relief=RIDGE)
 Cal_F.pack(side=TOP)
-Receipt_F=Frame(ReceiptCal_F,bg="Powder Blue",bd=4,relief=RIDGE)
+Receipt_F=Frame(ReceiptCal_F,bg="#B0E0E6",bd=4,relief=RIDGE)
 Receipt_F.pack(side=BOTTOM)
 
-MenuFrame=Frame(root,bg="Cadet Blue",bd=10,relief=RIDGE)
+MenuFrame=Frame(root,bg="#5F9EA0",bd=10,relief=RIDGE)
 MenuFrame.pack(side=LEFT)
-Cost_F=Frame(MenuFrame,bg="powder Blue",bd=4)
+Cost_F=Frame(MenuFrame,bg="#B0E0E6",bd=4)
 Cost_F.pack(side=BOTTOM)
-Drinks_F=Frame(MenuFrame,bg="Cadet Blue",bd=10)
+Drinks_F=Frame(MenuFrame,bg="#5F9EA0",bd=10)
 Drinks_F.pack(side=TOP)
 
-Drinks_F=Frame(MenuFrame,bg="powder Blue",bd=10,relief=RIDGE)
+Drinks_F=Frame(MenuFrame,bg="#B0E0E6",bd=10,relief=RIDGE)
 Drinks_F.pack(side=LEFT)
-Cake_F=Frame(MenuFrame,bg="powder Blue",bd=10,relief=RIDGE)
+Cake_F=Frame(MenuFrame,bg="#B0E0E6",bd=10,relief=RIDGE)
 Cake_F.pack(side=RIGHT)
 #--------------------------Variable-----------------------
 var1=IntVar()
@@ -473,38 +473,38 @@ txtQueen_Park_Cake=Entry(Cake_F,font=("arial",16,"bold"),bd=8,width=6,justify=LE
                          state=DISABLED,textvariable=E_Queen_Park_Cake)
 txtQueen_Park_Cake.grid(row=7,column=1)
 #-------------------------Total cost--------------------------------#
-lblCostofDrinks=Label(Cost_F,font=("arial",14,"bold"),text="Cost of Drinks",bg="powder Blue",fg="black")
+lblCostofDrinks=Label(Cost_F,font=("arial",14,"bold"),text="Cost of Drinks",bg="#B0E0E6",fg="black")
 lblCostofDrinks.grid(row=0,column=0,sticky=W)
 txtCostofDrinks=Entry(Cost_F,font=("arial",14,"bold"),textvariable=CostofDrinks,bd=7,bg="white",
                          insertwidth=2,justify=RIGHT)
 txtCostofDrinks.grid(row=0,column=1)
 
-lblCostofCakes=Label(Cost_F,font=("arial",14,"bold"),text="Cost of Cakes",bg="powder Blue",fg="black")
+lblCostofCakes=Label(Cost_F,font=("arial",14,"bold"),text="Cost of Cakes",bg="#B0E0E6",fg="black")
 lblCostofCakes.grid(row=1,column=0,sticky=W)
 txtCostofCakes=Entry(Cost_F,font=("arial",14,"bold"),textvariable=CostofCakes,bd=7,bg="white",
                          insertwidth=2,justify=RIGHT)
 txtCostofCakes.grid(row=1,column=1)
 
-lblServiceCharge=Label(Cost_F,font=("arial",14,"bold"),text="Service Charge",bg="powder Blue",fg="black")
+lblServiceCharge=Label(Cost_F,font=("arial",14,"bold"),text="Service Charge",bg="#B0E0E6",fg="black")
 lblServiceCharge.grid(row=2,column=0,sticky=W)
 txtServiceCharge=Entry(Cost_F,font=("arial",14,"bold"),textvariable=ServiceCharge,bd=7,bg="white",
                          insertwidth=2,justify=RIGHT)
 txtServiceCharge.grid(row=2,column=1)
 
 #----------------------------------Payment Information---------------------------#
-lblPaidTax=Label(Cost_F,font=("arial",14,"bold"),text="Paid Tax",bd=7,bg="powder Blue",fg="black")
+lblPaidTax=Label(Cost_F,font=("arial",14,"bold"),text="Paid Tax",bd=7,bg="#B0E0E6",fg="black")
 lblPaidTax.grid(row=0,column=2,sticky=W)
 txtPaidTax=Entry(Cost_F,font=("arial",14,"bold"),textvariable=PaidTax,bd=7,bg="white",
                          insertwidth=2,justify=RIGHT)
 txtPaidTax.grid(row=0,column=3)
 
-lblSubTotal=Label(Cost_F,font=("arial",14,"bold"),text="Sub Total",bd=7,bg="powder Blue",fg="black")
+lblSubTotal=Label(Cost_F,font=("arial",14,"bold"),text="Sub Total",bd=7,bg="#B0E0E6",fg="black")
 lblSubTotal.grid(row=1,column=2,sticky=W)
 txtSubTotal=Entry(Cost_F,font=("arial",14,"bold"),textvariable=SubTotal,bd=7,bg="white",
                          insertwidth=2,justify=RIGHT)
 txtSubTotal.grid(row=1,column=3)
 
-lblTotalCost=Label(Cost_F,font=("arial",14,"bold"),text="Total Cost",bd=7,bg="powder Blue",fg="black")
+lblTotalCost=Label(Cost_F,font=("arial",14,"bold"),text="Total Cost",bd=7,bg="#B0E0E6",fg="black")
 lblTotalCost.grid(row=2,column=2,sticky=W)
 txtTotalCost=Entry(Cost_F,font=("arial",14,"bold"),textvariable=TotalCost,bd=7,bg="white",
                          insertwidth=2,justify=RIGHT)
@@ -514,15 +514,15 @@ txtReceipt=Text(Receipt_F,width=46,height=12,bg="white",bd=4,font=("arial",12,"b
 txtReceipt.grid(row=0,column=0)
 #-----------------------------------Buttons----------------------#
 btnTotal=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Total",
-                bg="powder blue",command=CostofItem).grid(row=0,column=0)
+                bg="#B0E0E6",command=CostofItem).grid(row=0,column=0)
 btnReceipt=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Receipt",
-                bg="powder blue",command=Receipt).grid(row=0,column=1)
+                bg="#B0E0E6",command=Receipt).grid(row=0,column=1)
 btnReset=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Reset",
-                bg="powder blue",command=Reset)#.grid(row=0,column=2)
+                bg="#B0E0E6",command=Reset)#.grid(row=0,column=2)
 btnReset.grid(row=0, column=2)
 
 btnExit=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Exit",
-                bg="powder blue",command=iExit ).grid(row=0,column=3)
+                bg="#B0E0E6",command=iExit ).grid(row=0,column=3)
 #-------------------------------Calculator Display-----------------------------
 def btnClick(numbers):
     global operator
@@ -545,13 +545,13 @@ txtDisplay.grid(row=0,column=0,columnspan=4,pady=1)
 txtDisplay.insert(0,"0")
 #----------------------------------- calculator Buttons----------------------#
 btn7=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="7",
-                bg="powder blue",command=lambda:btnClick(7)).grid(row=2,column=0)
+                bg="#B0E0E6",command=lambda:btnClick(7)).grid(row=2,column=0)
 btn8=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="8",
-                bg="powder blue",command=lambda:btnClick(8)).grid(row=2,column=1)
+                bg="#B0E0E6",command=lambda:btnClick(8)).grid(row=2,column=1)
 btn9=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="9",
-                bg="powder blue",command=lambda:btnClick(9)).grid(row=2,column=2)
+                bg="#B0E0E6",command=lambda:btnClick(9)).grid(row=2,column=2)
 btnAdd=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="+",
-                bg="powder blue",command=lambda:btnClick("+")).grid(row=2,column=3)
+                bg="#B0E0E6",command=lambda:btnClick("+")).grid(row=2,column=3)
 #----------------------------------- calculator Buttons----------------------#
 btn4=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="4"
                ,command=lambda:btnClick(4)).grid(row=3,column=0)
@@ -560,7 +560,7 @@ btn5=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=
 btn6=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="6"
                 ,command=lambda:btnClick(6)).grid(row=3,column=2)
 btnSub=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="-",
-                bg="powder blue",command=lambda:btnClick("-")).grid(row=3,column=3)
+                bg="#B0E0E6",command=lambda:btnClick("-")).grid(row=3,column=3)
 #----------------------------------- calculator Buttons----------------------#
 btn1=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="1"
                 ,command=lambda:btnClick(1)).grid(row=4,column=0)
@@ -569,15 +569,15 @@ btn2=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=
 btn3=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="3"
                 ,command=lambda:btnClick(3)).grid(row=4,column=2)
 btnMul=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="*",
-                bg="powder blue",command=lambda:btnClick("*")).grid(row=4,column=3)
+                bg="#B0E0E6",command=lambda:btnClick("*")).grid(row=4,column=3)
 #----------------------------------- calculator Buttons----------------------#
 btn0=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="0",
-                bg="powder blue",command=lambda:btnClick(0)).grid(row=5,column=0)
+                bg="#B0E0E6",command=lambda:btnClick(0)).grid(row=5,column=0)
 btnClear=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="C",
-                bg="powder blue",command=btnClear).grid(row=5,column=1)
+                bg="#B0E0E6",command=btnClear).grid(row=5,column=1)
 btnEquals=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="=",
-                bg="powder blue",command=btnEquals).grid(row=5,column=2)
+                bg="#B0E0E6",command=btnEquals).grid(row=5,column=2)
 btnDiv=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="/",
-                bg="powder blue",command=lambda:btnClick("/")).grid(row=5,column=3)
+                bg="#B0E0E6",command=lambda:btnClick("/")).grid(row=5,column=3)
 # Run the Tkinter event loop
 root.mainloop()
