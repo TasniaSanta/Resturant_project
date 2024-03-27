@@ -186,7 +186,7 @@ def calculate_costs():
     item_school_cake=float(E_SchoolCake.get())
     item_sunny_ao_cake=float(E_Sunny_AO_Cake.get())
     item_jonathan_yo_cake=float(E_Jonathan_YO_Cake.get())
-    item_jonathan_yo_cake=float(E_West_African_Cake.get())
+    item_west_african_cake=float(E_West_African_Cake.get())
     item_lagos_chocolate_cake=float(E_Lagos_Choclate_Cake.get())
     item_kilburn_chocolate_cake=float(E_Kilburn_Choclate_Cake.get())
     item_carlton_hill_cake=float(E_Carlton_Hill_Cake.get())
@@ -195,7 +195,7 @@ def calculate_costs():
     price_of_drinks=(item_latta*1.2)+(item_espresso*1.99)+(item_iced_latta*2.05)+(item_vale_coffee*1.89)+(item_cappuccino*1.99)\
         +(item_african_coffee*2.99)+(item_american_coffee*2.39)+(item_iced_cappuccino*1.29)
     
-    price_of_cakes=(item_school_cake*1.35)+(item_sunny_ao_cake*2.2)+(item_jonathan_yo_cake*1.99)+(item_jonathan_yo_cake*1.49)+(item_lagos_chocolate_cake*1.8)\
+    price_of_cakes=(item_school_cake*1.35)+(item_sunny_ao_cake*2.2)+(item_jonathan_yo_cake*1.99)+(item_west_african_cake*1.49)+(item_lagos_chocolate_cake*1.8)\
         +(item_kilburn_chocolate_cake*1.67)+(item_carlton_hill_cake*1.6)+(item_queen_park_cake*1.99)
     drinks_price="€",str("%.2f"%(price_of_drinks))
     cakes_price="€",str("%.2f"%(price_of_cakes))
@@ -213,7 +213,7 @@ def calculate_costs():
     TotalCost.set(TC)
     
 
-def check_Latta():
+def check_latta():
     if var1.get()==1:
         txtLatta.configure(state=NORMAL)
         txtLatta.focus()
@@ -223,7 +223,7 @@ def check_Latta():
         txtLatta.configure(state=DISABLED)
         E_Latta.set("0")
 
-def check_Espresso():
+def check_espresso():
     if var2.get()==1:
         txtEspresso.configure(state=NORMAL)
         txtEspresso.focus()
@@ -231,7 +231,7 @@ def check_Espresso():
     elif var2.get()==0:
         txtEspresso.configure(state=DISABLED)
         E_Espresso.set("0")
-def check_Iced_Latta():
+def check_iced_latta():
     if var3.get()==1:
         txtIced_Latta.configure(state=NORMAL)
         txtIced_Latta.delete("0",END)
@@ -239,7 +239,7 @@ def check_Iced_Latta():
     elif var3.get()==0:
         txtIced_Latta.configure(state=DISABLED)
         E_Iced_Latta.set("0")        
-def check_Vale_coffee():
+def check_vale_coffee():
     if var4.get()==1:
         txtVale_Coffee.configure(state=NORMAL)
         txtVale_Coffee.focus()
@@ -247,7 +247,7 @@ def check_Vale_coffee():
     elif var4.get()==0:
         txtVale_Coffee.configure(state=DISABLED)
         E_Vale_Coffee.set("0")
-def check_Cappucino():
+def check_cappucino():
     if var5.get()==1:
         txtCappuccino.configure(state=NORMAL)
         txtCappuccino.focus()
@@ -256,7 +256,7 @@ def check_Cappucino():
         txtCappuccino.configure(state=DISABLED)
         E_Cappuccino.set("0")  
 
-def check_African_coffee():
+def check_african_coffee():
     if var6.get()==1:
         txtAfrican_Coffee.configure(state=NORMAL)
         txtAfrican_Coffee.focus()
@@ -264,7 +264,7 @@ def check_African_coffee():
     elif var6.get()==0:
         txtAfrican_Coffee.configure(state=DISABLED)
         E_African_Coffee.set("0")
-def check_American_coffee():
+def check_american_coffee():
     if var7.get()==1:
         txtAmerican_Coffee.configure(state=NORMAL)
         txtAmerican_Coffee.focus()
@@ -272,7 +272,7 @@ def check_American_coffee():
     elif var7.get()==0:
         txtAmerican_Coffee.configure(state=DISABLED)
         E_American_Coffee.set("0")
-def check_Iced_Cappucino():
+def check_iced_cappucino():
     if var8.get()==1:
         txtIced_Cappuccino.configure(state=NORMAL)
         txtIced_Cappuccino.focus()
@@ -280,7 +280,7 @@ def check_Iced_Cappucino():
     elif var8.get()==0:
         txtIced_Cappuccino.configure(state=DISABLED)
         E_Iced_Cappuccino.set("0")
-def check_School_cake():
+def check_school_cake():
     if var9.get()==1:
         txtSchoolCake.configure(state=NORMAL)
         txtSchoolCake.focus()
@@ -288,7 +288,7 @@ def check_School_cake():
     elif var9.get()==0:
         txtSchoolCake.configure(state=DISABLED)
         E_SchoolCake.set("0")
-def check_Sunny_AO_Cake():
+def check_sunny_ao_cake():
     if var10.get()==1:
         txtSunny_AO_Cake.configure(state=NORMAL)
         txtSunny_AO_Cake.focus()
@@ -296,7 +296,7 @@ def check_Sunny_AO_Cake():
     elif var10.get()==0:
         txtSunny_AO_Cake.configure(state=DISABLED)
         E_Sunny_AO_Cake.set("0")
-def check_Jonathan_YO_Cake():
+def check_jonathan_yo_cake():
     if var11.get()==1:
         txtJonathan_YO_Cake.configure(state=NORMAL)
         txtJonathan_YO_Cake.focus()
@@ -304,7 +304,7 @@ def check_Jonathan_YO_Cake():
     elif var11.get()==0:
         txtJonathan_YO_Cake.configure(state=DISABLED)
         E_Jonathan_YO_Cake.set("0")
-def check_West_Africa_Cake():
+def check_west_africa_cake():
     if var12.get()==1:
         txtWest_African_Cake.configure(state=NORMAL)
         txtWest_African_Cake.focus()
@@ -312,7 +312,7 @@ def check_West_Africa_Cake():
     elif var12.get()==0:
         txtWest_African_Cake.configure(state=DISABLED)
         E_West_African_Cake.set("0")
-def check_Lagos_choclte_Cake():
+def check_lagos_choclte_cake():
     if var13.get()==1:
         txtLagos_Choclate_Cake.configure(state=NORMAL)
         txtLagos_Choclate_Cake.focus()
@@ -320,7 +320,7 @@ def check_Lagos_choclte_Cake():
     elif var13.get()==0:
         txtLagos_Choclate_Cake.configure(state=DISABLED)
         E_Lagos_Choclate_Cake.set("0")
-def check_Kilburn_chocolate_Cake():
+def check_kilburn_chocolate_cake():
     if var14.get()==1:
         txtKilburn_Choclate_Cake.configure(state=NORMAL)
         txtKilburn_Choclate_Cake.focus()
@@ -329,7 +329,7 @@ def check_Kilburn_chocolate_Cake():
         txtKilburn_Choclate_Cake.configure(state=DISABLED)
         E_Kilburn_Choclate_Cake.set("0")
 
-def check_Carlton_Hill_Cake():
+def check_carlton_hill_cake():
     if var15.get()==1:
         txtCarlton_Hill_Cake.configure(state=NORMAL)
         txtCarlton_Hill_Cake.focus()
@@ -338,7 +338,7 @@ def check_Carlton_Hill_Cake():
         txtCarlton_Hill_Cake.configure(state=DISABLED)
         E_Carlton_Hill_Cake.set("0")
 
-def check_Queen_park_Cake():
+def check_queen_park_cake():
     if var16.get()==1:
         txtQueen_Park_Cake.configure(state=NORMAL)
         txtQueen_Park_Cake.focus()
@@ -381,21 +381,21 @@ def Receipt():
 
 #------------------------------------------------Drinks------------------#
 Latta=Checkbutton(Drinks_F,text="Latta",variable=var1,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="#B0E0E6",command=check_Latta).grid(row=0,sticky=W)
+                  bg="#B0E0E6",command=check_latta).grid(row=0,sticky=W)
 Espresso=Checkbutton(Drinks_F,text="Espresso",variable=var2,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="#B0E0E6",command=check_Espresso).grid(row=1,sticky=W)
+                  bg="#B0E0E6",command=check_espresso).grid(row=1,sticky=W)
 Iced_Latta=Checkbutton(Drinks_F,text="Iced_Latta",variable=var3,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="#B0E0E6",command=check_Iced_Latta).grid(row=2,sticky=W)
+                  bg="#B0E0E6",command=check_iced_latta).grid(row=2,sticky=W)
 Vale_Coffee=Checkbutton(Drinks_F,text="Vale Coffee",variable=var4,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="#B0E0E6",command=check_Vale_coffee).grid(row=3,sticky=W)
+                  bg="#B0E0E6",command=check_vale_coffee).grid(row=3,sticky=W)
 Cappuccino=Checkbutton(Drinks_F,text="Cappuccino",variable=var5,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="#B0E0E6",command=check_Cappucino).grid(row=4,sticky=W)
+                  bg="#B0E0E6",command=check_cappucino).grid(row=4,sticky=W)
 African_Coffee=Checkbutton(Drinks_F,text="African Coffee",variable=var6,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="#B0E0E6",command=check_African_coffee).grid(row=5,sticky=W)
+                  bg="#B0E0E6",command=check_african_coffee).grid(row=5,sticky=W)
 American_Coffee=Checkbutton(Drinks_F,text="American Coffee",variable=var7,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="#B0E0E6",command=check_American_coffee).grid(row=6,sticky=W)
+                  bg="#B0E0E6",command=check_american_coffee).grid(row=6,sticky=W)
 Iced_Cappuccino=Checkbutton(Drinks_F,text="Iced Cappuccino",variable=var8,onvalue=1,offvalue=0,font=("arial",18,"bold"),
-                  bg="#B0E0E6",command=check_Iced_Cappucino).grid(row=7,sticky=W)
+                  bg="#B0E0E6",command=check_iced_cappucino).grid(row=7,sticky=W)
 #------------------------------------------------Entry box for drinks------------------#
 txtLatta=Entry(Drinks_F,font=("arial",16,"bold"),textvariable=E_Latta,bd=8,width=6,justify=LEFT,state=DISABLED)
 txtLatta.grid(row=0,column=1)
@@ -423,21 +423,21 @@ txtIced_Cappuccino.grid(row=7,column=1)
 
 #-------------------------------cakes--------------------------------------------------#
 SchoolCake=Checkbutton(Cake_F,text="School Cake",variable=var9,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="#B0E0E6",command=check_School_cake).grid(row=0,sticky=W)
+                  bg="#B0E0E6",command=check_school_cake).grid(row=0,sticky=W)
 Sunny_AO_Cake=Checkbutton(Cake_F,text="Sunny O Cake",variable=var10,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="#B0E0E6",command=check_Sunny_AO_Cake).grid(row=1,sticky=W)
+                  bg="#B0E0E6",command=check_sunny_ao_cake).grid(row=1,sticky=W)
 Jonathan_YO_Cake=Checkbutton(Cake_F,text="Jonathan O Cake",variable=var11,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="#B0E0E6",command=check_Jonathan_YO_Cake).grid(row=2,sticky=W)
+                  bg="#B0E0E6",command=check_jonathan_yo_cake).grid(row=2,sticky=W)
 West_African_Cake=Checkbutton(Cake_F,text="West African Cake",variable=var12,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="#B0E0E6",command=check_West_Africa_Cake).grid(row=3,sticky=W)
+                  bg="#B0E0E6",command=check_west_africa_cake).grid(row=3,sticky=W)
 Lagos_Choclate_Cake=Checkbutton(Cake_F,text="Lagos Choclate Cake",variable=var13,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="#B0E0E6",command=check_Lagos_choclte_Cake).grid(row=4,sticky=W)
+                  bg="#B0E0E6",command=check_lagos_choclte_cake).grid(row=4,sticky=W)
 Kilburn_Choclate_Cake=Checkbutton(Cake_F,text="Kilburn Choclate Cake",variable=var14,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="#B0E0E6",command=check_Kilburn_chocolate_Cake).grid(row=5,sticky=W)
+                  bg="#B0E0E6",command=check_kilburn_chocolate_cake).grid(row=5,sticky=W)
 Carlton_Hill_Cake=Checkbutton(Cake_F,text="Carlton Hill Cake",variable=var15,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="#B0E0E6",command=check_Carlton_Hill_Cake).grid(row=6,sticky=W)
+                  bg="#B0E0E6",command=check_carlton_hill_cake).grid(row=6,sticky=W)
 Queen_Park_Cake=Checkbutton(Cake_F,text="Queen Park Cake",variable=var16,onvalue=1,offvalue=0,font=("arial",16,"bold"),
-                  bg="#B0E0E6",command=check_Queen_park_Cake).grid(row=7,sticky=W)
+                  bg="#B0E0E6",command=check_queen_park_cake).grid(row=7,sticky=W)
 
 #------------------------------------------------Entry box for Cakes------------------#
 txtSchoolCake=Entry(Cake_F,font=("arial",16,"bold"),bd=8,width=6,justify=LEFT,
