@@ -351,7 +351,7 @@ def generate_receipt_reference():
     #Generate a cryptographically secure random reference number for the receipt
     return "BILL" + str(secrets.randbelow(609235 - 10903) + 10903)
 
-def receipt():
+def Receipt():
     #Generate and display a receipt with a random reference number.
     txtReceipt.delete("1.0", END)
     random_ref = generate_receipt_reference()
@@ -523,20 +523,20 @@ btnReset.grid(row=0, column=2)
 btnExit=Button(Buttons_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="Exit",
                 bg="#B0E0E6",command=exit_application ).grid(row=0,column=3)
 #-------------------------------Calculator Display-----------------------------
-def btnClick(numbers):
+def btn_click(numbers):
     global operator
     operator=operator + str(numbers)
     text_Input.set(operator)
 
-def btnClear():
+def btn_clear():
     global operator
     operator = ""
     text_Input.set("")
 
-def btnEquals():
+def btn_equals():
     global operator
-    Sumup=str(eval(operator))
-    text_Input.set(Sumup)
+    sum_up=str(eval(operator))
+    text_Input.set(sum_up)
     operator=""
     
 txtDisplay=Entry(Cal_F,width=45,bg="white",bd=4,font=("arial",12,"bold"),justify=RIGHT,textvariable=text_Input)
@@ -544,39 +544,39 @@ txtDisplay.grid(row=0,column=0,columnspan=4,pady=1)
 txtDisplay.insert(0,"0")
 #----------------------------------- calculator Buttons----------------------#
 btn7=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="7",
-                bg="#B0E0E6",command=lambda:btnClick(7)).grid(row=2,column=0)
+                bg="#B0E0E6",command=lambda:btn_click(7)).grid(row=2,column=0)
 btn8=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="8",
-                bg="#B0E0E6",command=lambda:btnClick(8)).grid(row=2,column=1)
+                bg="#B0E0E6",command=lambda:btn_click(8)).grid(row=2,column=1)
 btn9=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="9",
-                bg="#B0E0E6",command=lambda:btnClick(9)).grid(row=2,column=2)
+                bg="#B0E0E6",command=lambda:btn_click(9)).grid(row=2,column=2)
 btnAdd=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="+",
-                bg="#B0E0E6",command=lambda:btnClick("+")).grid(row=2,column=3)
+                bg="#B0E0E6",command=lambda:btn_click("+")).grid(row=2,column=3)
 #----------------------------------- calculator Buttons----------------------#
 btn4=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="4"
-               ,command=lambda:btnClick(4)).grid(row=3,column=0)
+               ,command=lambda:btn_click(4)).grid(row=3,column=0)
 btn5=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="5"
-                ,command=lambda:btnClick(5)).grid(row=3,column=1)
+                ,command=lambda:btn_click(5)).grid(row=3,column=1)
 btn6=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="6"
-                ,command=lambda:btnClick(6)).grid(row=3,column=2)
+                ,command=lambda:btn_click(6)).grid(row=3,column=2)
 btnSub=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="-",
-                bg="#B0E0E6",command=lambda:btnClick("-")).grid(row=3,column=3)
+                bg="#B0E0E6",command=lambda:btn_click("-")).grid(row=3,column=3)
 #----------------------------------- calculator Buttons----------------------#
 btn1=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="1"
-                ,command=lambda:btnClick(1)).grid(row=4,column=0)
+                ,command=lambda:btn_click(1)).grid(row=4,column=0)
 btn2=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="2"
-                ,command=lambda:btnClick(2)).grid(row=4,column=1)
+                ,command=lambda:btn_click(2)).grid(row=4,column=1)
 btn3=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="3"
-                ,command=lambda:btnClick(3)).grid(row=4,column=2)
+                ,command=lambda:btn_click(3)).grid(row=4,column=2)
 btnMul=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="*",
-                bg="#B0E0E6",command=lambda:btnClick("*")).grid(row=4,column=3)
+                bg="#B0E0E6",command=lambda:btn_click("*")).grid(row=4,column=3)
 #----------------------------------- calculator Buttons----------------------#
 btn0=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="0",
-                bg="#B0E0E6",command=lambda:btnClick(0)).grid(row=5,column=0)
+                bg="#B0E0E6",command=lambda:btn_click(0)).grid(row=5,column=0)
 btnClear=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="C",
-                bg="#B0E0E6",command=btnClear).grid(row=5,column=1)
+                bg="#B0E0E6",command=btn_clear).grid(row=5,column=1)
 btnEquals=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="=",
-                bg="#B0E0E6",command=btnEquals).grid(row=5,column=2)
+                bg="#B0E0E6",command=btn_equals).grid(row=5,column=2)
 btnDiv=Button(Cal_F,padx=16,pady=1,bd=7,fg="black",font=("arial",16,"bold"),width=4,text="/",
-                bg="#B0E0E6",command=lambda:btnClick("/")).grid(row=5,column=3)
+                bg="#B0E0E6",command=lambda:btn_click("/")).grid(row=5,column=3)
 # Run the Tkinter event loop
 root.mainloop()
