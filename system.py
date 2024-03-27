@@ -1,4 +1,3 @@
-#from tkinter import *
 from tkinter import Tk, Frame, Label, Entry, Checkbutton, Button, Text, StringVar, IntVar, END, DISABLED, NORMAL,RIDGE,CENTER,TOP,BOTTOM,RIGHT,LEFT,W
 import random
 import time;
@@ -103,14 +102,8 @@ E_Carlton_Hill_Cake.set("0")
 E_Queen_Park_Cake.set("0")
 
 Dateoforder.set(time.strftime("%d/%m/%Y"))
-# Define a function to exit the application
-# def iExit():
-#     iExit=tkinter.messagebox.askyesno("Exit Resturant System","Confirm if u want to exit")
-#     if iExit>0:
-#         root.destroy()
-#         return
-    
 
+    
 def exit_application():
     exit_confirmation = tkinter.messagebox.askyesno("Exit Restaurant System", "Confirm if you want to exit")
     if exit_confirmation:
@@ -213,10 +206,7 @@ def calculate_costs():
 
     subtotal_items="€",str("%.2f"%(price_of_drinks+price_of_cakes+1.59))
     SubTotal.set(subtotal_items)
-
-    #Tax="£",str("%.2f"%(PriceofDrinks+PriceofCakes+1.59)*0.15)
     tax = "€" + str("%.2f" % ((price_of_drinks + price_of_cakes + 1.59) * 0.15))
-
     PaidTax.set(tax)
     TT=((price_of_drinks+price_of_cakes+1.59)*0.15)
     TC="€",str("%.2f"%(price_of_drinks+price_of_cakes+1.59+TT))
@@ -224,145 +214,148 @@ def calculate_costs():
     
 
 def check_Latta():
-    if (var1.get()==1):
+    if var1.get()==1:
         txtLatta.configure(state=NORMAL)
         txtLatta.focus()
         txtLatta.delete("0",END)
         E_Latta.set("")
-    elif(var1.get()==0):
+    elif var1.get()==0:
         txtLatta.configure(state=DISABLED)
         E_Latta.set("0")
 
 def check_Espresso():
-    if (var2.get()==1):
+    if var2.get()==1:
         txtEspresso.configure(state=NORMAL)
         txtEspresso.focus()
         E_Espresso.set("")
-    elif(var2.get()==0):
+    elif var2.get()==0:
         txtEspresso.configure(state=DISABLED)
         E_Espresso.set("0")
 def check_Iced_Latta():
-    if (var3.get()==1):
+    if var3.get()==1:
         txtIced_Latta.configure(state=NORMAL)
         txtIced_Latta.delete("0",END)
         txtIced_Latta.focus()
-    elif(var3.get()==0):
+    elif var3.get()==0:
         txtIced_Latta.configure(state=DISABLED)
         E_Iced_Latta.set("0")        
 def check_Vale_coffee():
-    if (var4.get()==1):
+    if var4.get()==1:
         txtVale_Coffee.configure(state=NORMAL)
         txtVale_Coffee.focus()
         txtVale_Coffee.delete(0,END)
-    elif(var4.get()==0):
+    elif var4.get()==0:
         txtVale_Coffee.configure(state=DISABLED)
         E_Vale_Coffee.set("0")
 def check_Cappucino():
-    if (var5.get()==1):
+    if var5.get()==1:
         txtCappuccino.configure(state=NORMAL)
         txtCappuccino.focus()
         txtCappuccino.delete("0",END)
-    elif(var5.get()==0):
+    elif var5.get()==0:
         txtCappuccino.configure(state=DISABLED)
         E_Cappuccino.set("0")  
 
 def check_African_coffee():
-    if (var6.get()==1):
+    if var6.get()==1:
         txtAfrican_Coffee.configure(state=NORMAL)
         txtAfrican_Coffee.focus()
         txtAfrican_Coffee.delete("0",END)
-    elif(var6.get()==0):
+    elif var6.get()==0:
         txtAfrican_Coffee.configure(state=DISABLED)
         E_African_Coffee.set("0")
 def check_American_coffee():
-    if (var7.get()==1):
+    if var7.get()==1:
         txtAmerican_Coffee.configure(state=NORMAL)
         txtAmerican_Coffee.focus()
         txtAmerican_Coffee.delete("0",END)
-    elif(var7.get()==0):
+    elif var7.get()==0:
         txtAmerican_Coffee.configure(state=DISABLED)
         E_American_Coffee.set("0")
 def check_Iced_Cappucino():
-    if (var8.get()==1):
+    if var8.get()==1:
         txtIced_Cappuccino.configure(state=NORMAL)
         txtIced_Cappuccino.focus()
         txtIced_Cappuccino.delete("0",END)
-    elif(var8.get()==0):
+    elif var8.get()==0:
         txtIced_Cappuccino.configure(state=DISABLED)
         E_Iced_Cappuccino.set("0")
 def check_School_cake():
-    if (var9.get()==1):
+    if var9.get()==1:
         txtSchoolCake.configure(state=NORMAL)
         txtSchoolCake.focus()
         txtSchoolCake.delete("0",END)
-    elif(var9.get()==0):
+    elif var9.get()==0:
         txtSchoolCake.configure(state=DISABLED)
         E_SchoolCake.set("0")
 def check_Sunny_AO_Cake():
-    if (var10.get()==1):
+    if var10.get()==1:
         txtSunny_AO_Cake.configure(state=NORMAL)
         txtSunny_AO_Cake.focus()
         txtSunny_AO_Cake.delete("0",END)
-    elif(var10.get()==0):
+    elif var10.get()==0:
         txtSunny_AO_Cake.configure(state=DISABLED)
         E_Sunny_AO_Cake.set("0")
 def check_Jonathan_YO_Cake():
-    if (var11.get()==1):
+    if var11.get()==1:
         txtJonathan_YO_Cake.configure(state=NORMAL)
         txtJonathan_YO_Cake.focus()
         txtJonathan_YO_Cake.delete("0",END)
-    elif(var11.get()==0):
+    elif var11.get()==0:
         txtJonathan_YO_Cake.configure(state=DISABLED)
         E_Jonathan_YO_Cake.set("0")
 def check_West_Africa_Cake():
-    if (var12.get()==1):
+    if var12.get()==1:
         txtWest_African_Cake.configure(state=NORMAL)
         txtWest_African_Cake.focus()
         txtWest_African_Cake.delete("0",END)
-    elif(var12.get()==0):
+    elif var12.get()==0:
         txtWest_African_Cake.configure(state=DISABLED)
         E_West_African_Cake.set("0")
 def check_Lagos_choclte_Cake():
-    if (var13.get()==1):
+    if var13.get()==1:
         txtLagos_Choclate_Cake.configure(state=NORMAL)
         txtLagos_Choclate_Cake.focus()
         txtLagos_Choclate_Cake.delete("0",END)
-    elif(var13.get()==0):
+    elif var13.get()==0:
         txtLagos_Choclate_Cake.configure(state=DISABLED)
         E_Lagos_Choclate_Cake.set("0")
 def check_Kilburn_chocolate_Cake():
-    if (var14.get()==1):
+    if var14.get()==1:
         txtKilburn_Choclate_Cake.configure(state=NORMAL)
         txtKilburn_Choclate_Cake.focus()
         txtKilburn_Choclate_Cake.delete("0",END)
-    elif(var14.get()==0):
+    elif var14.get()==0:
         txtKilburn_Choclate_Cake.configure(state=DISABLED)
         E_Kilburn_Choclate_Cake.set("0")
 
 def check_Carlton_Hill_Cake():
-    if (var15.get()==1):
+    if var15.get()==1:
         txtCarlton_Hill_Cake.configure(state=NORMAL)
         txtCarlton_Hill_Cake.focus()
         txtCarlton_Hill_Cake.delete("0",END)
-    elif(var15.get()==0):
+    elif var15.get()==0:
         txtCarlton_Hill_Cake.configure(state=DISABLED)
         E_Carlton_Hill_Cake.set("0")
 
-
 def check_Queen_park_Cake():
-    if (var16.get()==1):
+    if var16.get()==1:
         txtQueen_Park_Cake.configure(state=NORMAL)
         txtQueen_Park_Cake.focus()
         txtQueen_Park_Cake.delete("0",END)
-    elif(var16.get()==0):
+    elif var16.get()==0:
         txtQueen_Park_Cake.configure(state=DISABLED)
         E_Queen_Park_Cake.set("0")
 
+def generate_receipt_reference():
+    """Generate a random reference number for the receipt."""
+    return "BILL" + str(random.randint(10903, 609235))
+
 def Receipt():
-    txtReceipt.delete("1.0",END)
-    X=random.randint(10903,609235)
-    random_Ref=str(X)
-    Receipt_Ref.set("BILL"+random_Ref)
+    #Generate and display a receipt with a random reference number.
+    txtReceipt.delete("1.0", END)
+    random_ref = generate_receipt_reference()
+    Receipt_Ref.set(random_ref)
 
     txtReceipt.insert(END,"Receipt Ref:\t\t" + Receipt_Ref.get()+"\t"+Dateoforder.get()+"\n")
     txtReceipt.insert(END,"Item:\t\t" + "Cost of Items\n")
