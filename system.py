@@ -1,3 +1,4 @@
+import secrets
 from tkinter import Tk, Frame, Label, Entry, Checkbutton, Button, Text, StringVar, IntVar, END, DISABLED, NORMAL,RIDGE,CENTER,TOP,BOTTOM,RIGHT,LEFT,W
 import random
 import time;
@@ -102,8 +103,7 @@ E_Carlton_Hill_Cake.set("0")
 E_Queen_Park_Cake.set("0")
 
 Dateoforder.set(time.strftime("%d/%m/%Y"))
-
-    
+  
 def exit_application():
     exit_confirmation = tkinter.messagebox.askyesno("Exit Restaurant System", "Confirm if you want to exit")
     if exit_confirmation:
@@ -348,8 +348,8 @@ def check_Queen_park_Cake():
         E_Queen_Park_Cake.set("0")
 
 def generate_receipt_reference():
-    """Generate a random reference number for the receipt."""
-    return "BILL" + str(random.randint(10903, 609235))
+    #Generate a cryptographically secure random reference number for the receipt
+    return "BILL" + str(secrets.randbelow(609235 - 10903) + 10903)
 
 def Receipt():
     #Generate and display a receipt with a random reference number.
