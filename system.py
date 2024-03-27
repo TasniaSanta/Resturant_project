@@ -351,7 +351,7 @@ def generate_receipt_reference():
     #Generate a cryptographically secure random reference number for the receipt
     return "BILL" + str(secrets.randbelow(609235 - 10903) + 10903)
 
-def Receipt():
+def receipt():
     #Generate and display a receipt with a random reference number.
     txtReceipt.delete("1.0", END)
     random_ref = generate_receipt_reference()
