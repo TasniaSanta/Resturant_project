@@ -69,9 +69,28 @@ These are the metrics listed below :
 **Duplication:** Avoiding duplication of code, by creating reusable functions, modules, or libraries. As one can see by the sonar cloud metrics duplication is 0%[Duplications](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=duplicated_lines_density&view=list)
 
 **Unittest:** There is a also comprehensive unit test[Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py)
+
 **Modularity:** The codes written are broken down into smaller ones, Use indentation, spacing, and line breaks to improve the code quality.[Check_here](https://github.com/TasniaSanta/Resturant_project/blob/main/system.py#217)
 
 
+# 8. UnitTest
+I have imported unittest module for unit testing. i have written three unittst based on caclulator
 
+**test_btn_click:**
+- This test checks the functionality of the btn_click function.
+- It simulates clicking a button with the number 7.
+- It asserts that after clicking the button, the text_Input.set method is called once with the current input text concatenated with "7".
 
+**test_btn_clear:**
+- This test checks the functionality of the btn_clear function.
+- It simulates clicking a clear button.
+- It asserts that after clicking the clear button, the text_Input.set method is called once with an empty string.
 
+**test_btn_equals:**
+- This test checks the functionality of the btn_equals function.
+- It mocks the return value of the get method to simulate the input "3+5".
+- It triggers the btn_equals function.
+-It asserts that after clicking the equals button, the text_Input.set method is called once with the result of the expression "3+5", which is "8".
+
+These unit tests ensure that the calculator functions (btn_click, btn_clear, and btn_equals) behave as expected when invoked with certain inputs or actions. By verifying these behaviors, I can ensure the correctness and reliability of calculator application.The results of the unit tests for the functions calculator application[Result](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/unittest_screenshot.png)
+This is [Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py)file
