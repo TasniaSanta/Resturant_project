@@ -18,3 +18,5 @@ The Graphical User Interface in this project
 
 <!--[![Restaurant Management System GUI](Gui_screenshort.png)](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort.png)-->
 [Restaurant Management System GUI](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort.png)
+The Graphical User Interface with the features in this project
+[System GUI](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort_total.png)
