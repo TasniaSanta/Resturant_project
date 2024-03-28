@@ -74,7 +74,7 @@ These are the metrics listed below :
 
 
 # 8. UnitTest
-I have imported unittest module for unit testing. i have written three unittst based on caclulator
+I have imported unittest module for unit testing. I have written three unittst based on the calculator function
 
 **test_btn_click:**
 - This test checks the functionality of the btn_click function.
@@ -92,6 +92,25 @@ I have imported unittest module for unit testing. i have written three unittst b
 - It triggers the btn_equals function.
 -It asserts that after clicking the equals button, the text_Input.set method is called once with the result of the expression "3+5", which is "8".
 
-These unit tests ensure that the calculator functions (btn_click, btn_clear, and btn_equals) behave as expected when invoked with certain inputs or actions. By verifying these behaviors, I can ensure the correctness and reliability of calculator application.The results of the unit tests for the functions calculator application [Result](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/unittest_screenshot.png)
+These unit tests ensure that the calculator functions (btn_click, btn_clear, and btn_equals) behave as expected when invoked with certain inputs or actions. By verifying these behaviors, I can ensure the correctness and reliability of the calculator application. The results of the unit tests for the functions calculator application [Result](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/unittest_screenshot.png)
 
 Here is [Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py) file
+
+
+# 9. IDE
+I choose Visual Studio as an IDE for this Project. I choose Visual Studio for coding for several reasons. Visual Studio provides a comprehensive set of features and tools for software development, including code editing, debugging, testing, version control integration, and more. It supports a wide range of programming languages, frameworks, and platforms, making it suitable for a variety of development projects, including web, desktop, mobile, and cloud applications.
+
+some of My Favorite Shortcut tools are 
+
+**1) ctrl + L:** It allows me to clear the output console
+
+**2) Alt+Click :** It Inserts a cursor
+
+**3) Ctrl+Shift+N:** It opens a new window/instance
+
+**4) Ctrl+Shift+W :** It Close window/instance
+
+**5) Ctrl + Shift + K:** for deleting the current line.
+
+**6)Ctrl + Shift + T:** for navigating to a test.
+
