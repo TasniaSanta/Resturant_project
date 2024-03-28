@@ -42,8 +42,8 @@ In my project, I've chosen Domain-Driven Design (DDD) for its focus on modeling 
 
 # 4. Metrics
 I have used the sonar cloud to maintain and analyze code quality
-
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg" alt="alt text" width="200"/>
+
 [![Click me](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg)](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)
 
 
