@@ -59,10 +59,19 @@ These are the metrics listed below :
 # 5. Clean Code Development
 [Cheatsheet](https://github.com/TasniaSanta/Resturant_project/blob/main/Cheatsheet.txt) Clean code development and it's an example in my code
 
-**Readability:** The code is easy to understand, with clear names, concise expressions, and consistent indentation. Plus, I have added helpful comments before each function to explain what it does. As one can see by the sonarcloud readibilty analysis.[Reliability_Rating](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=reliability_rating&view=list)
+**Readability:** The code is easy to understand, with clear names, concise expressions, and consistent indentation. Plus, I have added helpful comments before each function to explain what it does. As one can see by the sonar cloud readability analysis.[Reliability_Rating](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=reliability_rating&view=list)
 
-**Comments:** I have written clear and concise comments that explain the why behind the code, not just what.
-https://github.com/TasniaSanta/Resturant_project/blob/main/system.py#L175
+**Comments:** Use clear and concise comments that explain the why behind the code, not just what.
+[Comments](https://github.com/TasniaSanta/Resturant_project/blob/main/system.py#L174)
+
+**Naming conventions of variables and function:** Use of descriptive names for functions that convey their purpose. For example, exit_application,reset_values,calculate_costs, and generate_receipt_reference are named properly as per their functionality.[Naming convention](https://github.com/TasniaSanta/Resturant_project/blob/main/system.py#L175)
+
+**Duplication:** Avoiding duplication of code, by creating reusable functions, modules, or libraries. As one can see by the sonar cloud metrics duplication is 0%[Duplications](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=duplicated_lines_density&view=list)
+
+**Unittest:** There is a also comprehensive unit test[Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py)
+**Modularity:** The codes written are broken down into smaller ones, Use indentation, spacing, and line breaks to improve the code quality.[Check_here](https://github.com/TasniaSanta/Resturant_project/blob/main/system.py#217)
+
+
 
 
 
