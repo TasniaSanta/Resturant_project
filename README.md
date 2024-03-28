@@ -25,6 +25,8 @@ Throughout the journey of building this project, I delved into the world of Git,
 GitHub: 
 <!--![alt text](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png)-->
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png" alt="alt text" width="400"/>
+[![alt text](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png)](https://github.com/TasniaSanta/Resturant_project)
+
 
 
 # 2. UML
