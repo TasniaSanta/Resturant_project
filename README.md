@@ -92,5 +92,6 @@ I have imported unittest module for unit testing. i have written three unittst b
 - It triggers the btn_equals function.
 -It asserts that after clicking the equals button, the text_Input.set method is called once with the result of the expression "3+5", which is "8".
 
-These unit tests ensure that the calculator functions (btn_click, btn_clear, and btn_equals) behave as expected when invoked with certain inputs or actions. By verifying these behaviors, I can ensure the correctness and reliability of calculator application.The results of the unit tests for the functions calculator application[Result](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/unittest_screenshot.png)
-This is [Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py)file
+These unit tests ensure that the calculator functions (btn_click, btn_clear, and btn_equals) behave as expected when invoked with certain inputs or actions. By verifying these behaviors, I can ensure the correctness and reliability of calculator application.The results of the unit tests for the functions calculator application [Result](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/unittest_screenshot.png)
+
+Here is [Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py) file
