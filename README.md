@@ -20,3 +20,5 @@ The Graphical User Interface in this project [Restaurant Management System GUI](
 
 The Graphical User Interface with the features in this project [System GUI](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort_total.png)
 
+# 1. Git
+Throughout the journey of building this project, I delved into the world of Git, a powerful tool for managing project versions. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit.Git became my trusty companion, helping me organize my work, collaborate effectively with teammates, and navigate through the twists and turns of development.
