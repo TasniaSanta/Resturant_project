@@ -14,4 +14,5 @@ Welcome to the Restaurant Management System project repository. This system prov
 
 The Graphical User Interface in this project
 [![GUI](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort.png)]
+![Restaurant Management System GUI](Gui_screenshot.png)
 
