@@ -12,4 +12,5 @@ Welcome to the Restaurant Management System project repository. This system prov
 - Generate receipts with reference number, date, and time
 - Calculator for verifying calculations
 
-
+The Graphical User Interface in this project
+[![GUI](image_url)]([Gui_screenshort.png](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort.png))
