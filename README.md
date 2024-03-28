@@ -24,7 +24,7 @@ The Graphical User Interface with the features in this project [System GUI](http
 Throughout the journey of building this project, I delved into the world of Git, a powerful tool for managing project versions. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit. Git became my trusty companion, helping me organize my work, collaborate effectively with teammates, and navigate through the twists and turns of development. Moreover, Integrating SonarCloud and GitHub Actions into our workflow has been a game-changer. It's like having a personal assistant to track our project's progress.
 GitHub: 
 <!--![alt text](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png)-->
-<img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png" alt="alt text" width="400"/>
+<img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png" alt="alt text" width="200"/>
 
 # 2. UML
 For my project, I have used these 3 UML diagrams :
@@ -72,9 +72,21 @@ These are the metrics listed below :
 
 **Modularity:** The codes written are broken down into smaller ones, Use indentation, spacing, and line breaks to improve the code quality.[Check_here](https://github.com/TasniaSanta/Resturant_project/blob/main/system.py#217)
 
+# 6. & 7. Build and CI/CD
+<img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/44036562.png" alt="alt text" width="200"/>
+
+For me, points 6 and 7 are integrated. I have used GitHub action for the build and Continuous Integration/Continuous Deployment. As my project is in Python, hence I have used GitHub action.it is possible to use build management systems such as Ant, Maven, and Gradle for Python projects, although they are more commonly associated with Java projects. While these tools are primarily designed for managing Java projects and dependencies, they can be adapted to work with Python projects with some additional configuration.so I decided to work with GitHub Action.
+
+**Build:** The pipeline builds our project, compiling source code, bundling assets, and generating artifacts for deployment. [Build](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/build.png)
+**Test:** Unit tests and integration tests are executed to ensure the quality and reliability of the codebase. Any failures during testing will halt the pipeline. After putting in a lot of effort and trying multiple times, I finally succeeded in passing this test. It took quite a bit of time and determination, but I didn't give up, and in the end, I was able to achieve my goal.[Test](https://github.com/TasniaSanta/Resturant_project/actions/runs/8474537710/job/23221096526)
+
+GitHub Actions is a powerful automation tool provided by GitHub that enables Continuous Integration (CI) and Continuous Deployment (CD) pipelines directly within your GitHub repository
+I define my CI/CD pipeline using a YAML-based configuration file called a workflow file. This file resides in the .github/workflows directory of my GitHub repository.[.yml](https://github.com/TasniaSanta/Resturant_project/blob/main/.github/workflows/python-app.yml)file
+
+
 
 # 8. UnitTest
-I have imported unittest module for unit testing. I have written three unittst based on the calculator function
+I have imported a unit test module for unit testing. I have written three unit tests based on the calculator function
 
 **test_btn_click:**
 - This test checks the functionality of the btn_click function.
