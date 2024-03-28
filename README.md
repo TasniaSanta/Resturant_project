@@ -24,6 +24,6 @@ The Graphical User Interface with the features in this project [System GUI](http
 Throughout the journey of building this project, I delved into the world of Git, a powerful tool for managing project versions. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit. Git became my trusty companion, helping me organize my work, collaborate effectively with teammates, and navigate through the twists and turns of development. Moreover, Integrating SonarCloud and GitHub Actions into our workflow has been a game-changer. It's like having a personal assistant to track our project's progress.
 
 # 2. UML
-For my project, I have used this 3 UML diagrams :
-- 1. [SequenceDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/SequenceDiagram.png)
+For my project, I have used these 3 UML diagrams :
+1. [SequenceDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/SequenceDiagram.png)- These diagrams offer a clear representation of the flow of operations and communication between different modules, helping to illustrate the behavior and logic of the system.
 
