@@ -127,3 +127,7 @@ some of My Favorite Shortcut tools are
 
 **6)Ctrl + Shift + T:** for navigating to a test.
 
+# 10. DSL
+
+my [DSL.py](https://github.com/TasniaSanta/Resturant_project/blob/main/DSL.py) file defines a Domain-Specific Language (DSL) for managing a menu and orders. It consists of three main classes: MenuItem, Order, and MenuDSL. MenuItem represents items on the menu with options, Order represents customer orders, and MenuDSL acts as a DSL for creating menu items, orders and displaying the menu. The DSL allows for defining menu items with options and creating orders with specific items and options.
+
