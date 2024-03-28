@@ -13,5 +13,5 @@ Welcome to the Restaurant Management System project repository. This system prov
 - Calculator for verifying calculations
 
 The Graphical User Interface in this project
-[![GUI](Gui_screenshot.png)]([link_to_full_size_image](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort.png))
+[![GUI](Gui_screenshot.png)]([https://github.com/TasniaSanta/Resturant_project](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort.png))
 
