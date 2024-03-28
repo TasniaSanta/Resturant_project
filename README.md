@@ -56,7 +56,10 @@ These are the metrics listed below :
 - Reliability Rating(0 Bugs)(A): [Rating](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=reliability_rating&view=list)
 - Lines of Code:534 
 
+# 5. Clean Code Development
+[Cheatsheet](https://github.com/TasniaSanta/Resturant_project/blob/main/Cheatsheet.txt)Clean code development and it's an example in my code
 
+Readability: The code is easy to understand, with clear names, concise expressions, and consistent indentation. Plus, I have added helpful comments before each function to explain what it does.
 
 
 
