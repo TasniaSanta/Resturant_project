@@ -46,5 +46,17 @@ I have used the sonar cloud to maintain and analyze code quality
 
 [![Click me](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/Sonercloud.png)](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)
 
+These are the metrics listed below :
+
+- Quality Gate Status(Passed):[Status](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)
+- Maintainability(0 Code Smells): [Maintainability Rating](https://sonarcloud.io/component_measures?metric=Maintainability&view=list&id=TasniaSanta_Resturant_proje)
+- Duplications(Duplicated Lines (%)0.0%):[Duplications](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=duplicated_lines_density&view=list)
+- Security (0 Vulnerabilities)(A):[Review](https://sonarcloud.io/component_measures?metric=Security&view=list&id=TasniaSanta_Resturant_p)
+- Security Review(0 Security Hotspots)(A): [Review](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=security_review_rating&view=list)
+- Reliability Rating(0 Bugs)(A): [Rating](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=reliability_rating&view=list)
+- Lines of Code:534 
+
+
+
 
 
