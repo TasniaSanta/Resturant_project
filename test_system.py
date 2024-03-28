@@ -1,22 +1,22 @@
 import unittest
 from unittest.mock import MagicMock
 
-def btn_click(numbers, text_Input):
+def btn_click(numbers, text_input):
     # Update the input text with the clicked number
-    operator = text_Input.get()
+    operator = text_input.get()
     operator = operator + str(numbers)
-    text_Input.set(operator)
+    text_input.set(operator)
 
-def btn_clear(text_Input):
+def btn_clear(text_input):
     # Clear the input text
-    text_Input.set("")
+    text_input.set("")
 
-def btn_equals(text_Input):
+def btn_equals(text_input):
     # Evaluate the expression and update the input text with the result
-    operator = text_Input.get()
+    operator = text_input.get()
     try:
         sum_up = str(eval(operator))
-        text_Input.set(sum_up)
+        text_input.set(sum_up)
     except Exception as e:
         # Handle errors gracefully
         print("Error:", e)
@@ -40,7 +40,7 @@ class TestCalculator(unittest.TestCase):
         self.text_Input.set.assert_called_once_with("")
 
     def test_btn_equals(self):
-        # Mock the return value of get method to simulate input '3+5'
+        # Mock the return value of the get method to simulate input '3+5'
         self.text_Input.get.return_value = "3+5"
         
         # Trigger btn_equals
