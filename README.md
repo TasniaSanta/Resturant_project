@@ -25,9 +25,6 @@ Throughout the journey of building this project, I delved into the world of Git,
 GitHub: 
 <!--![alt text](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png)-->
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png" alt="alt text" width="400"/>
-[![alt text](https://github.com/TasniaSanta/Resturant_project/raw/main/photo/imageGitHub.png)](https://github.com/TasniaSanta/Resturant_project)
-
-
 
 # 2. UML
 For my project, I have used these 3 UML diagrams :
@@ -46,5 +43,7 @@ In my project, I've chosen Domain-Driven Design (DDD) for its focus on modeling 
 # 4. Metrics
 I have used the sonar cloud to maintain and analyze code quality
 ![alt text](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg)(https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)
+[![alt text](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg)](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project){:width="200px"}
+
 
 
