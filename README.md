@@ -10,5 +10,6 @@ Welcome to the Restaurant Management System project repository. This system prov
 - Calculate total payment including tax
 - Generate receipts with reference number, date, and time
 - Calculator for verifying calculations
-
+There are the files related to the project
+-system.py
 
