@@ -46,4 +46,3 @@ I have used the sonar cloud to maintain and analyze code quality
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg" alt="alt text" width="200"/>
 [<img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg">](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)
 
-
