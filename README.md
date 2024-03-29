@@ -56,7 +56,9 @@ These are the metrics listed below :
 - Security (0 Vulnerabilities)(A):[Review](https://sonarcloud.io/component_measures?metric=Security&view=list&id=TasniaSanta_Resturant_p)
 - Security Review(0 Security Hotspots)(A): [Review](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=security_review_rating&view=list)
 - Reliability Rating(0 Bugs)(A): [Rating](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=reliability_rating&view=list)
-- Lines of Code:534 
+- Lines of Code:534
+<img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/Qualitygate.png" alt="alt text" width="150"/> <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/SonarcloudOverview.png" alt="alt text" width="100"/>
+
 
 # 5. Clean Code Development
 [Cheatsheet](https://github.com/TasniaSanta/Resturant_project/blob/main/Cheatsheet.txt) Clean code development and it's an example in my code
