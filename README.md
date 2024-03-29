@@ -3,6 +3,7 @@ Hello, This repository contains Restaurant Management System Project. GUI-based 
 
 # General
 Welcome to the Restaurant Management System project repository. This system provides a convenient interface for customers to view the menu, select items, customize orders, calculate the total payment including tax, and generate receipts. Additionally, it includes a calculator feature for verifying calculations. There are the files related to the project
+
 [system.py](https://github.com/TasniaSanta/Resturant_project/blob/main/system.py)
 
 # Features
