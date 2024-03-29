@@ -1,5 +1,5 @@
 # Resturant_project
-Hello, This repository contains Restaurant Management System Project. GUI-based project in Python using module Tkinter
+Hello, This repository contains Restaurant Management System Project. GUI-based project in Python using the module Tkinter
 
 # General
 Welcome to the Restaurant Management System project repository. This system provides a convenient interface for customers to view the menu, select items, customize orders, calculate the total payment including tax, and generate receipts. Additionally, it includes a calculator feature for verifying calculations. There are the files related to the project
@@ -21,7 +21,7 @@ The Graphical User Interface in this project [Restaurant Management System GUI](
 The Graphical User Interface with the features in this project [System GUI](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort_total.png)
 
 # 1. Git
-Throughout the journey of building this project, I delved into the world of Git, a powerful tool for managing project versions. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit. Git became my trusty companion, helping me organize my work, collaborate effectively with teammates, and navigate through the twists and turns of development. Moreover, Integrating SonarCloud and GitHub Actions into our workflow has been a game-changer. It's like having a personal assistant to track our project's progress.
+Throughout the journey of building this project, I delved into the world of Git, a powerful tool for managing project versions. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit. Git became my trusty companion, helping me organize my work and collaborate effectively with my teammates. Moreover, Integrating SonarCloud and GitHub Actions into our workflow has been a game-changer. It's like having a personal assistant to track our project's progress.
 GitHub: 
 <!--![alt text](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png)-->
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png" alt="alt text" width="200"/>
@@ -42,9 +42,9 @@ In my project, I've chosen Domain-Driven Design (DDD) for its focus on modeling 
 
 # 4. Metrics
 I have used the sonar cloud to maintain and analyze code quality
-<!--<img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg" alt="alt text" width="200"/>-->
+<img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg" alt="alt text" width="200"/>
 
-[![Click me](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/Sonercloud.png)](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)
+<!--[![Click me](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/Sonercloud.png)](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)-->
 
 These are the metrics listed below :
 
@@ -111,9 +111,9 @@ Here is [Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/te
 
 
 # 9. IDE
-I choose Visual Studio as an IDE for this Project. I choose Visual Studio for coding for several reasons. Visual Studio provides a comprehensive set of features and tools for software development, including code editing, debugging, testing, version control integration, and more. It supports a wide range of programming languages, frameworks, and platforms, making it suitable for a variety of development projects, including web, desktop, mobile, and cloud applications.
+I choose Visual Studio as an IDE for this Project. I choose Visual Studio for coding for several reasons. Visual Studio provides a comprehensive set of features and tools for software development, including code editing, debugging, testing, version control integration, and more. It supports a wide range of programming languages, frameworks, and platforms
 
-some of My Favorite Shortcut tools are 
+some of My Favorite Shortcut tools are:
 
 **1) ctrl + L:** It allows me to clear the output console
 
@@ -129,5 +129,38 @@ some of My Favorite Shortcut tools are
 
 # 10. DSL
 
-my [DSL.py](https://github.com/TasniaSanta/Resturant_project/blob/main/DSL.py) file defines a Domain-Specific Language (DSL) for managing a menu and orders. It consists of three main classes: MenuItem, Order, and MenuDSL. MenuItem represents items on the menu with options, Order represents customer orders, and MenuDSL acts as a DSL for creating menu items, orders and displaying the menu. The DSL allows for defining menu items with options and creating orders with specific items and options.
+my [DSL.py](https://github.com/TasniaSanta/Resturant_project/blob/main/DSL.py) file defines a Domain-Specific Language (DSL) for managing a menu and orders.
+
+It consists of three main classes:
+- MenuItem
+- Order and
+- MenuDSL.
+
+MenuItem represents items on the menu with options, Order represents customer orders, and MenuDSL acts as a DSL for creating menu items, orders and displaying the menu. The DSL allows for defining menu items with options and creating orders with specific items and options.
+Final Data Structures:
+
+# 11.  Functional Programming
+
+To cover all the mentioned functional programming aspects, I have written a small Python program. The Link for the complete program can be found at [functional_programming.py](https://github.com/TasniaSanta/Resturant_project/blob/main/functional_programming.py)
+
+**Final Data Structures:** The drinks_dict and cakes_dict hold the final data regarding available drinks and cakes, respectively.
+
+**Side-effect-free Functions:** The calculate_costs function calculates costs based on the input parameters and returns the result without modifying any global state.
+
+**Higher-order Functions:** The apply_discount function is a higher-order function that returns a function (discount) that applies a discount to the total cost.
+
+**Functions as Parameters and Return Values:** The apply_discount function takes discount_rate as a parameter and returns another function (discount) as a result.
+
+**Closures / Anonymous Functions:** The discount function returned by apply_discount is a closure, as it captures the discount_rate parameter from the enclosing scope.
+
+
+
+
+
+
+
+
+
+
+
 
