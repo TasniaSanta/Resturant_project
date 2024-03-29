@@ -41,11 +41,11 @@ In my project, I've chosen Domain-Driven Design (DDD) for its focus on modeling 
 5. And finally Core domain chart.[CoreDomainChart](https://github.com/TasniaSanta/Resturant_project/blob/main/DDD/CoreDomainChart.png)
 
 # 4. Metrics
-I have used the sonar cloud to maintain and analyze code quality
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/article-SonarCloud-Analysez-votre-projet-GitHub-via-VSTS.jpg" alt="alt text" width="200"/>
 
-<!--[![Click me](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/Sonercloud.png)](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)-->
+I have used the sonar cloud to maintain and analyze code quality
 
+<!--[![Click me](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/Sonercloud.png)](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)-->
 These are the metrics listed below :
 
 - Quality Gate Status(Passed):[Status](https://sonarcloud.io/summary/overall?id=TasniaSanta_Resturant_project)
