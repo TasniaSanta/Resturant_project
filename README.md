@@ -111,6 +111,7 @@ I have imported a unit test module for unit testing. I have written three unit t
 -It asserts that after clicking the equals button, the text_Input.set method is called once with the result of the expression "3+5", which is "8".
 
 These unit tests ensure that the calculator functions (btn_click, btn_clear, and btn_equals) behave as expected when invoked with certain inputs or actions. By verifying these behaviors, I can ensure the correctness and reliability of the calculator application. The results of the unit tests for the functions calculator application
+
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/unittest_screenshot.png" alt="alt text" width="350"/>
 
 Here is [Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py) file
