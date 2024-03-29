@@ -21,7 +21,7 @@ The Graphical User Interface in this project [Restaurant Management System GUI](
 The Graphical User Interface with the features in this project [System GUI](https://github.com/TasniaSanta/Resturant_project/blob/main/Gui_screenshort_total.png)
 
 # 1. Git
-Throughout the journey of building this project, I delved into the world of Git, a powerful tool for managing project versions. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit. Git became my trusty companion, helping me organize my work and collaborate effectively with my teammates. Moreover, Integrating SonarCloud and GitHub Actions into our workflow has been a game-changer. It's like having a personal assistant to track our project's progress.
+Throughout the journey of building this project, I delved into the world of Git, a powerful tool for managing project versions. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit. Git became my trusty companion, helping me organize my work and collaborate effectively with my teammates. Moreover, Integrating SonarCloud and GitHub Actions into the workflow has been a game-changer. It's like having a personal assistant to track our project's progress.
 GitHub: 
 <!--![alt text](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png)-->
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png" alt="alt text" width="200"/>
@@ -29,8 +29,8 @@ GitHub:
 # 2. UML
 For my project, I have used these 3 UML diagrams :
 1. [SequenceDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/SequenceDiagram.png)- These diagrams offer a clear representation of the flow of operations and communication between different modules, helping to illustrate the behavior and logic of the system.
-2. [UseCaseDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/UseCaseRMDiagram.png)-The diagram defining the various interactions between actors (users or external systems) and the system itself. These diagrams provide a high-level overview of the system's functionalities and the different roles involved in interacting with the system.
-3. [ClassDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/classDiagramupdate.png)- The diagram has played a role in showing the static structure of our system. it illustrates the different classes, their attributes, methods, and the relationships between them.
+2. [UseCaseDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/UseCaseRMDiagram.png)-The diagram defining the various interactions between actors (users or external systems) and the system itself. These diagrams provide an overview of the system's functionalities and the different roles involved in interacting with the system.
+3. [ClassDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/classDiagramupdate.png)- The diagram has played a role in showing the static structure of the system. it illustrates the different classes, their attributes, methods, and the relationships between them.
    
 # 3. DDD
 In my project, I've chosen Domain-Driven Design (DDD) for its focus on modeling the core domain, establishing clear boundaries, and promoting collaboration through a ubiquitous language.
@@ -66,7 +66,7 @@ These are the metrics listed below :
 
 **Naming conventions of variables and function:** Use of descriptive names for functions that convey their purpose. For example, exit_application,reset_values,calculate_costs, and generate_receipt_reference are named properly as per their functionality.[Naming convention](https://github.com/TasniaSanta/Resturant_project/blob/main/system.py#L175)
 
-**Duplication:** Avoiding duplication of code, by creating reusable functions, modules, or libraries. As one can see by the sonar cloud metrics duplication is 0%[Duplications](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=duplicated_lines_density&view=list)
+**Duplication:** Avoiding duplication, by creating reusable functions, modules, or libraries. As one can see by the sonar cloud metrics duplication is 0%[Duplications](https://sonarcloud.io/component_measures?id=TasniaSanta_Resturant_project&metric=duplicated_lines_density&view=list)
 
 **Unittest:** There is a also comprehensive unit test[Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py)
 
