@@ -25,18 +25,18 @@ The Graphical User Interface with the features in this project [System GUI](http
 # 1. Git
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/imageGitHub.png" alt="alt text" width="200"/>
 
-Throughout the journey of building this project, I delved into the world of Git, a powerful tool for managing project versions. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit. Git became my trusty companion, helping me organize my work and collaborate effectively with my teammates. Moreover, Integrating SonarCloud and GitHub Actions into the workflow has been a game-changer. It's like having a personal assistant to track our project's progress.
+Throughout the journey of building this project, I explored the world of Git. Before this project, I was pretty green when it came to Git. But as I dove in, pushed code, pulled changes, and merged branches, I found myself gaining confidence with each commit. Moreover, Integrating SonarCloud and GitHub Actions into the workflow has been a game-changer. It's like having a personal assistant to track my project's progress.
 GitHub: 
 
 # 2. UML
 For my project, I have used these 3 UML diagrams :
-1. [SequenceDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/SequenceDiagram.png)- These diagrams offer a clear representation of the flow of operations and communication between different modules, helping to illustrate the behavior and logic of the system.
+1. [SequenceDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/SequenceDiagram.png)- These diagrams offer a clear representation of the flow of operations and communication between different modules.
 2. [UseCaseDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/UseCaseRMDiagram.png)-The diagram defining the various interactions between actors (users or external systems) and the system itself. These diagrams provide an overview of the system's functionalities and the different roles involved in interacting with the system.
 3. [ClassDiagram](https://github.com/TasniaSanta/Resturant_project/blob/main/UMLDiagram/classDiagramupdate.png)- The diagram has played a role in showing the static structure of the system. it illustrates the different classes, their attributes, methods, and the relationships between them.
    
 # 3. DDD
-In my project, I've chosen Domain-Driven Design (DDD) for its focus on modeling the core domain, establishing clear boundaries, and promoting collaboration through a ubiquitous language.
-1. I conducted a collaborative brainstorming session to outline project goals and features. Through various techniques like mind mapping, I generated ideas and prioritized requirements, setting the foundation for the development plan.[Brainstorming](https://github.com/TasniaSanta/Resturant_project/blob/main/DDD/BrainstormingFirststep.png)
+In my project, I've picked Domain-Driven Design (DDD) because it helps define the main part of what we're working on, sets clear limits and collaboration through a ubiquitous language.
+1. I conducted a brainstorming session to outline project goals and features. Through various techniques like mind mapping.[Brainstorming](https://github.com/TasniaSanta/Resturant_project/blob/main/DDD/BrainstormingFirststep.png)
 2. I recorded the key domain concepts, aiming for a deep understanding. This helped me to make a better decision.[Domain_concepts](https://github.com/TasniaSanta/Resturant_project/blob/main/DDD/domainidea.png)
 3. After grasping domain ideas, I honed in on developing a 'ubiquitous language'—a common vocabulary that I could easily understand to ensure smooth communication.[ubiquitous language](https://github.com/TasniaSanta/Resturant_project/blob/main/DDD/domainUbiquitous%20Language.png)
 4. After gathering ideas, I sketched out a context map a visual roadmap outlining key content and its relationships.[ContexMapping](https://github.com/TasniaSanta/Resturant_project/blob/main/DDD/ContexMapping.png)
@@ -82,13 +82,11 @@ These are the metrics listed below :
 
 For me, points 6 and 7 are integrated. I have used GitHub action for the build and Continuous Integration/Continuous Deployment. As my project is in Python, hence I have used GitHub action.it is possible to use build management systems such as Ant, Maven, and Gradle for Python projects, although they are more commonly associated with Java projects. While these tools are primarily designed for managing Java projects and dependencies, they can be adapted to work with Python projects with some additional configuration.so I decided to work with GitHub Action.
 
-**Build:** The pipeline builds our project, compiling source code, bundling assets, and generating artifacts for deployment. [Build](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/build.png)
+**Build:** The pipeline builds the project, compiling source code, bundling assets, and generating artifacts for deployment. [Build](https://github.com/TasniaSanta/Resturant_project/blob/main/photo/build.png)
 
-**Test:** Unit tests and integration tests are executed to ensure the quality and reliability of the codebase. Any failures during testing will halt the pipeline. After putting in a lot of effort and trying multiple times, I finally succeeded in passing this test. It took quite a bit of time and determination, but I didn't give up, and in the end, I was able to achieve my goal.[Test](https://github.com/TasniaSanta/Resturant_project/actions/runs/8474537710/job/23221096526)
+**Test:** Unit tests and integration tests are executed to ensure the quality and reliability of the codebase. When I was getting error messages during testing, the pipeline got halted. After putting in a lot of effort and trying multiple times, I finally succeeded in passing this test. It took quite a bit of time and determination, but I didn't give up, and in the end, I was able to achieve my goal.[Test](https://github.com/TasniaSanta/Resturant_project/actions/runs/8474537710/job/23221096526)
 
-GitHub Actions is a powerful automation tool provided by GitHub that enables Continuous Integration (CI) and Continuous Deployment (CD) pipelines directly within your GitHub repository
-I define my CI/CD pipeline using a YAML-based configuration file called a workflow file. This file resides in the .github/workflows directory of my GitHub repository.[.yml](https://github.com/TasniaSanta/Resturant_project/blob/main/.github/workflows/python-app.yml)file
-
+GitHub Actions lets us set up Continuous Integration (CI) and Continuous Deployment (CD) pipelines directly within your GitHub repository.I define my CI/CD pipeline using a YAML-based configuration file called a workflow file. This file resides in the .github/workflows directory of my GitHub repository.[.yml](https://github.com/TasniaSanta/Resturant_project/blob/main/.github/workflows/python-app.yml)file
 
 
 # 8. UnitTest
@@ -107,15 +105,12 @@ I have imported a unit test module for unit testing. I have written three unit t
 **test_btn_equals:**
 - This test checks the functionality of the btn_equals function.
 - It mocks the return value of the get method to simulate the input "3+5".
-- It triggers the btn_equals function.
--It asserts that after clicking the equals button, the text_Input.set method is called once with the result of the expression "3+5", which is "8".
 
 These unit tests ensure that the calculator functions (btn_click, btn_clear, and btn_equals) behave as expected when invoked with certain inputs or actions. By verifying these behaviors, I can ensure the correctness and reliability of the calculator application. The results of the unit tests for the functions calculator application
 
 <img src="https://github.com/TasniaSanta/Resturant_project/blob/main/photo/unittest_screenshot.png" alt="alt text" width="350"/>
 
 Here is [Unittest](https://github.com/TasniaSanta/Resturant_project/blob/main/test_system.py) file
-
 
 
 # 9. IDE
